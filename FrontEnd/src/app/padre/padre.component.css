@@ -1,0 +1,43 @@
+.general {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+}
+
+.elemento {
+    display: grid; /* Agrega esto */
+    grid-template-areas:
+        "ele1 img"
+        "ele2 img"
+        "ele3 cant";
+    border-radius: 20pt;
+    border-style: solid;
+    margin: 20pt;
+}
+
+.p1 {
+    grid-area: ele1; /* Sin comillas */
+}
+
+.p2 {
+    grid-area: ele2; /* Sin comillas */
+}
+
+.p3 {
+    grid-area: ele3; /* Sin comillas */
+}
+
+.img {
+    grid-area: img; /* Sin comillas */
+    width: 30%; /* Ajusta el tamaño según necesites */
+    margin-left: 90pt;
+    align-self: center;
+}
+.cantidades{
+    grid-area: cant;
+    float: right;
+}
+.img_carrito{
+    position: fixed;
+    width: 5%;
+    right: 0;
+}

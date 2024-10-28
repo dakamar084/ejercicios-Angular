@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Der15Component } from './der15.component';
+import { HijoComponent } from './hijo.component';
 
-describe('Der15Component', () => {
-  let component: Der15Component;
-  let fixture: ComponentFixture<Der15Component>;
+describe('HijoComponent', () => {
+  let component: HijoComponent;
+  let fixture: ComponentFixture<HijoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Der15Component]
+      imports: [HijoComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Der15Component);
+    fixture = TestBed.createComponent(HijoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

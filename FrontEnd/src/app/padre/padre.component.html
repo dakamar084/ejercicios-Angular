@@ -1,0 +1,16 @@
+<img src="carrito.png" alt="imagen carrito" class="img_carrito">
+<div class="general">
+    <div *ngFor="let nombre of ArrayNombre; let i = index" class="elemento">
+        <p class="p1">Producto: {{ nombre }}</p>
+        <p class="p2">Precio: {{ ArrayPrecios[i] }}</p>
+        <p class="p3">Stock: {{ ArrayStock[i] }}</p>
+        <img class="img" src="carrito.png" alt="añadir al carrito" (click)="mostrar_cant(i)">
+        <div *ngIf="mostrar === i" class="cantidades">
+          <button (click)="restar()">-</button>
+          {{cantidad}}
+          <button (click)="sumar()">+</button>
+          <br>
+          <button (click)="asignar()">añadir</button>
+        </div>
+      </div>
+</div>
